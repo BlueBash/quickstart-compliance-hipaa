@@ -1,4 +1,4 @@
-# quickstart-compliance-hipaa
+# quickstart-compliance-hipaa-postgresql
 ## Reference Architecture for HIPAA on the AWS Cloud
 
 The HIPAA Quick Start deploys a reference architecture that helps organizations with workloads that fall in scope for the Health Insurance Portability and Accountability Act.
