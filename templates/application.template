@@ -362,8 +362,8 @@ Resources:
       VpcId: !Ref pProductionVPC
       SecurityGroupIngress:
       - IpProtocol: tcp
-        FromPort: 3306
-        ToPort: 3306
+        FromPort: 5432
+        ToPort: 5432
         SourceSecurityGroupId: !Ref rSecurityGroupAppInstance
       Tags:
       - Key: Name
@@ -440,7 +440,7 @@ Resources:
     - rSecurityGroupRDS
     Properties:
       DBName: !Ref pDBName
-      Engine: MySQL
+      Engine: PostgreSQL
       MultiAZ: true
       StorageEncrypted: true
       MasterUsername: !Ref pDBUser
